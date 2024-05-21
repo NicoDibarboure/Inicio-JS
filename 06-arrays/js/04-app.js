@@ -1,16 +1,45 @@
+// const meses = [
+//   "Enero",
+//   "Febrero",
+//   "Marzo",
+//   "Abril",
+//   "Mayo",
+//   "Junio",
+//   "Julio",
+//   "Agosto",
+//   "Septiembre",
+//   "Octubre",
+//   "Noviembre",
+// ];
+
+// meses.push("Diciembre"); // Push agregar al final del array
+// console.table(meses);
+
+// meses.pop(); // Pop elimina el último elemento del array
+// console.table(meses);
+
+// meses.unshift("Mes 0"); // Unshift agrega al inicio del array
+// console.table(meses);
+
+const carrito = [];
+
+// Definir un producto
 const producto = {
-  nombre: "Monitor 20 Pulgadas",
-  precio: 300,
-  disponible: true,
+  nombre: "Monitor 32 Pulgadas",
+  precio: 400,
 };
-// const nombre = producto.nombre;
 
-// console.log(nombre);
+const producto2 = {
+  nombre: "Celular",
+  precio: 800,
+};
+const producto3 = {
+  nombre: "Teclado",
+  precio: 200,
+};
 
-// Object Destructuring
+carrito.push(producto); // Agrega al final del array
+carrito.push(producto2); // Agrega al final del array
+carrito.unshift(producto3); // Agrega al inicio del array
 
-const { nombre, precio, disponible } = producto;
-
-console.log(nombre);
-console.log(precio);
-console.log(disponible);
+console.table(carrito);
