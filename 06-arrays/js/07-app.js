@@ -1,17 +1,44 @@
+const carrito = [];
+
+// Definir un producto
+
 const producto = {
-  nombre: "Monitor 20 Pulgadas",
-  precio: 300,
-  disponible: true,
+  nombre: "Monitor 32 Pulgadas",
+  precio: 400,
 };
 
-// * const nombreProducto = "Monitor 20 Pulgadas";
+const producto2 = {
+  nombre: "Celular",
+  precio: 800,
+};
 
-// * nombreProducto = "Monitor 30 Pulgadas"; // Error
+// push agrega al final del arreglo
 
-// El valor de una constante no puede ser reasignado
+carrito.push(producto);
+carrito.push(producto2);
 
-// El valor de un objeto si puede ser modificado, pero no su referencia.
+const producto3 = {
+  nombre: "Teclado",
+  precio: 200,
+};
+const producto4 = {
+  nombre: "Mouse",
+  precio: 300,
+};
 
-producto.disponible = false;
-delete producto.precio;
-console.log(producto);
+// Agregar al inicio del arreglo
+carrito.unshift(producto3, producto4);
+
+console.table(carrito);
+
+// Eliminar último elemento de un arreglo
+// carrito.pop();
+// console.table(carrito);
+
+// Eliminar del inicio del arreglo
+// carrito.shift();
+// console.table(carrito);
+
+// Eliminar un elemento en específico
+carrito.splice(1, 1);
+console.table(carrito);

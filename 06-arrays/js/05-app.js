@@ -11,15 +11,18 @@ const producto2 = {
   nombre: "Celular",
   precio: 800,
 };
+
+// push agrega al final del arreglo
+
+carrito.push(producto);
+carrito.push(producto2);
+
 const producto3 = {
   nombre: "Teclado",
   precio: 200,
 };
 
-let resultado;
+// Agregar al inicio del arreglo
+carrito.unshift(producto3);
 
-resultado = [...carrito, producto]; // Esta manera de declarar es la forma correcta de agregar un elemento al array. Se le conoce como Spread Operator.
-resultado = [...resultado, producto2];
-resultado = [producto3, ...resultado];
-
-console.table(resultado);
+console.table(carrito);
