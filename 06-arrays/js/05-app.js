@@ -1,20 +1,25 @@
+const carrito = [];
+
+// Definir un producto
+
 const producto = {
-  nombre: "Monitor 20 Pulgadas",
-  precio: 300,
-  disponible: true,
-  informacion: {
-    medidas: {
-      peso: "1kg",
-      medidas: "1m",
-    },
-    fabricacion: {
-      pais: "China",
-    },
-  },
+  nombre: "Monitor 32 Pulgadas",
+  precio: 400,
 };
 
-console.log(producto);
+const producto2 = {
+  nombre: "Celular",
+  precio: 800,
+};
+const producto3 = {
+  nombre: "Teclado",
+  precio: 200,
+};
 
-console.log(producto.informacion.medidas.peso);
-console.log(producto.informacion.medidas);
-console.log(producto.informacion.fabricacion.pais);
+let resultado;
+
+resultado = [...carrito, producto]; // Esta manera de declarar es la forma correcta de agregar un elemento al array. Se le conoce como Spread Operator.
+resultado = [...resultado, producto2];
+resultado = [producto3, ...resultado];
+
+console.table(resultado);
