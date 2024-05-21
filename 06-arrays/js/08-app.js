@@ -1,19 +1,22 @@
-// Object Methods
-
-"use strict";
-
 const producto = {
   nombre: "Monitor 20 Pulgadas",
   precio: 300,
   disponible: true,
 };
+// const nombre = producto.nombre;
 
-Object.freeze(producto); // No se puede modificar el objeto
+// console.log(nombre);
 
-// producto.disponible = false;
-// producto.imagen = "imagen.jpg";
-// delete producto.precio;
+// Object Destructuring
 
-console.log(producto);
+const { nombre } = producto;
 
-console.log(Object.isFrozen(producto)); // Verifica si el objeto esta congelado
+console.log(nombre);
+
+// Destructuring con arrays. Se utiliza corchetes en lugar de llaves.
+
+const numeros = [10, 20, 30, 40, 50];
+
+const [a, b, c, ...cuarto] = numeros;
+
+console.log(a, b, c, cuarto);
