@@ -7,14 +7,14 @@ const carrito = [
   { nombre: "Celular", precio: 700 },
 ];
 
-// carrito.forEach(function (item) {
+// carrito.forEach( (item) => {
 //   console.log(`${item.nombre} - Precio: ${item.precio}`);
 // });
 
 // .map method
 // .map crea un nuevo arreglo con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
 
-const nuevoArray = carrito.map(function (item) {
+const nuevoArray = carrito.map((item) => {
   return `${item.nombre} - Precio: ${item.precio}`;
 });
 
