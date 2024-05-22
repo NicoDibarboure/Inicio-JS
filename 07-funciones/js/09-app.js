@@ -13,13 +13,14 @@ const reproductor = {
   },
 };
 
-reproductor.reproducir(30);
-reproductor.pausar();
-
 reproductor.borrar = function (id) {
   console.log(`Borrando canción con el id: ${id}`);
 };
 
+reproductor.reproducir(30);
+reproductor.reproducir(20);
+reproductor.pausar();
 reproductor.borrar(30);
 reproductor.crearPlaylist("Heavy Metal");
+reproductor.crearPlaylist("Rock");
 reproductor.reproducirPlaylist("Heavy Metal");
