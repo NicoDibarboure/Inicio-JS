@@ -18,7 +18,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 33px 9%;
-  background: transparent;
+  background-color: #133917;
 }
 
 .logo {
@@ -188,6 +188,7 @@ section {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .formulario p {
@@ -316,22 +317,22 @@ section {
     position: absolute;
     top: 100%;
     right: -100%;
-    width: 300px;
-    height: 40vh;
+    width: 100%; /* Cambiado de 300px a 100% */
+    max-width: 300px; /* Nuevo - Limita el ancho del menú */
+    height: 0; /* Cambiado de 40vh a 0 */
     background: #4d9559;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding: 50px 20px;
-    transition: all 0.55s ease;
+    overflow: hidden; /* Nuevo - Oculta el contenido que desborda */
+    transition: height 0.55s ease; /* Cambiado de all a height */
   }
   .navlist a {
     display: block;
-    margin-left: 0;
-    margin: 7px 0;
+    margin: 15px 0; /* Nuevo - Aumenta el espacio entre elementos */
+    text-align: center; /* Nuevo - Centra el texto */
   }
   .navlist.open {
-    right: 0;
+    height: 40vh; /* Cambiado de right a height */
   }
 }
 
