@@ -28,6 +28,8 @@ header {
 }
 .navlist {
   display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .navlist a {
   color: white;
