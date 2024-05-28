@@ -244,6 +244,69 @@ section {
   transform: translateY(-8px);
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  color: white;
+  background: linear-gradient(240deg, #4d9559 0%, #38703d 0%, #133917 55.52%);
+  text-align: center;
+}
+
+.card-img img {
+  width: 20%;
+  height: auto;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.card-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.card-text p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card-text a {
+  display: inline-block;
+  color: white;
+  background: #4d9559;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+}
+
+.card-text a:hover {
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.card-text a.ctaa {
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 2rem;
+}
+
+.card-text a.ctaa i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
 @media (max-width: 1535px) {
   header {
     padding: 15px 3%;
